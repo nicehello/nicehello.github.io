@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+    <script>
+        //屏蔽右键菜单 
+        document.oncontextmenu = function(event) {
+        if (window.event) {
+        event = window.event;
+        }
+        
+        try {
+        var the = event.srcElement;
+        if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
+        return false;
+        }
+        return true;
+        } catch (e) {
+        return false;
+        }
+        }
+        
+        //屏蔽粘贴 
+        document.onpaste = function(event) { 
+        if (window.event) {
+        event = window.event;
+        }
+        try {
+        var the = event.srcElement;
+        if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
+        return false;
+        }
+        return true; 
+        } catch (e) {
+        return false;
+        }
+        }
+                
+        //屏蔽剪切
+        document.oncut = function(event) {
+        if (window.event) { 
+        event = window.event;
+        }
+        try {
+        var the = event.srcElement;
+        if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
+        return false;
+        }
+        return true;
+        } catch (e) {
+        return false;
+        }
+        }        
+        </script>
+<head>
+    <link href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/lxgwwenkaiscreen.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>NiceHello Network</title>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: LXGW WenKai Screen, serif;
+        }
+        h1, h2, h3, h4, .TagsLabel, .Button, .DiscussionListItem-count, .item-discussion-views {
+        font-family: LXGW WenKai Screen, sans-serif;
+        }
+        .container {
+            width: 60%;
+            margin: 10% auto 0;
+            background-color:steelblue;
+            padding: 2% 5%;
+            border-radius: 10px
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+            ul li {
+                line-height: 2.3
+            }
+
+        a {
+            color: blue
+        }
+        /* 弹窗样式 */
+        #welcomeMessage {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* 黑色半透明背景 */
+            color: white; /* 文字颜色 */
+            padding: 10px;
+            text-align: center;
+            display: none; /* 默认隐藏 */
+            animation: slideDown 0.5s ease forwards, fadeOut 1s 2s ease forwards; /* 动画效果 */
+            border-radius: 10px; /* 圆角 */
+            max-width: 300px; /* 最大宽度 */
+            margin: 0 auto; /* 居中 */
+        }
+
+        /* 弹出动画 */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        /* 收回动画 */
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+        }
+        /* 页脚样式 */
+        footer {
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            color: black;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 欢迎回来弹窗 -->
+    <div id="welcomeMessage">
+        <p>欢迎回来!</p>
+    </div>
+    <div class="container">
+        <h1><p style="color:aqua;">NiceHello<p2 style="color:aquamarine;">-<p3 style="color:blue;">Network</p3></h1>
+        <ul>
+            <li>本服是一个群组服，有众多游戏可以玩</li>
+            <p style="color:darkgrey;">(腐竹会整活awa</p>
+            <li>本服离线ip: play.nicehello.online:12220</li>
+            <li>本服正版ip: play.nicehello.online:54631</li>
+            <li>(腐竹正在处理解析ing...)</li>
+        </ul>
+        <h1>还在等什么?快来官方链接van耍吧!</h1>
+            <li><a href="https://qm.qq.com/q/2hKv0z2a9W">
+                <button>加入官方Q群</button>
+            </a></li>
+            <li><a href="https://kook.top/gAm8QW">
+                <button>加入KOOK频道</button>
+            </a></li>
+    </div>
+</body>
+<footer>
+    <p align="center">© NiceHello Network 2024</p>    
+</footer>
+
+<script>
+    updateTime();
+    setInterval(updateTime, 1000);
+
+    // 显示欢迎回来弹窗
+    function showWelcomeMessage() {
+        document.getElementById('welcomeMessage').style.display = 'block';
+    }
+
+    // 页面加载后显示欢迎回来弹窗
+    window.onload = function() {
+        showWelcomeMessage();
+    }
+</script>
+</html>
