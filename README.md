@@ -1,4 +1,4 @@
-Language selector: <a href="https://github.com/nicehello/nicehello.github.io/blob/main/README.md#english">English</a> | <a href="https://github.com/nicehello/nicehello.github.io/blob/main/README.md#chinese-%E4%B8%AD%E6%96%87">中文</a>
+Language selector | 语言选择器: <a href="https://github.com/nicehello/nicehello.github.io/blob/main/README.md#english">English</a> | <a href="https://github.com/nicehello/nicehello.github.io/blob/main/README.md#chinese-%E4%B8%AD%E6%96%87">中文</a>
 # English
 
 ### Warning: I can't speak English very well,so if you can't understand,I'm so sorry:(
