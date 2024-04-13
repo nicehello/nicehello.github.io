@@ -63,6 +63,36 @@
         h1, h2, h3, h4, .TagsLabel, .Button, .DiscussionListItem-count, .item-discussion-views {
         font-family: LXGW WenKai Screen, sans-serif;
         }
+        .animated-button-2{
+            position: relative;
+            padding:  20px 40px;
+            font-size: 1.4rem;
+            background-color: #00b3b4;
+            background-size: 46px 26px;
+            border: 1px solid #555;  
+            color: white;
+            transition: all ease 0.3s;
+            }
+
+        .animated-button-2::after{
+            position: absolute;
+            top: 50%;
+            right: 0.6em;
+            transform: translateY(-50%);
+            content: "»";
+            font-size: 1.2em;
+            transition: all ease 0.3s;
+            opacity: 0;
+            }
+
+        .animated-button-2:hover{
+            padding: 20px 60px 20px 20px;
+            }
+
+        .animated-button-2:hover::after{
+            right: 1.2em;
+            opacity: 1;
+            }
         .container {
             width: 60%;
             margin: 10% auto 0;
@@ -146,7 +176,7 @@
         </ul>
         <h1>还在等什么?快来官方链接van耍吧!</h1>
             <li><a href="https://qm.qq.com/q/2hKv0z2a9W">
-                <button>加入官方Q群</button>
+                <button class="animated-button-2">加入官方Q群</button>
             </a></li>
             <li><a href="https://kook.top/gAm8QW">
                 <button>加入KOOK频道</button>
