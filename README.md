@@ -133,6 +133,7 @@ Language selector | 语言选择器: <a href="https://github.com/nicehello/niceh
 #
 #
 #
+Language selector | 语言选择器: <a href="https://github.com/nicehello/nicehello.github.io/blob/main/README.md#english">English</a> | <a href="https://github.com/nicehello/nicehello.github.io/blob/main/README.md#chinese-%E4%B8%AD%E6%96%87">中文</a>
 # Chinese 中文
 ### 本服是一个群组服,你可以玩到许多游戏!
 ### 正版ip:play.nicehello.online:54631
