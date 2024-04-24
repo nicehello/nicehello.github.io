@@ -6,7 +6,7 @@ Language selector | 语言选择器: <a href="https://github.com/nicehello/niceh
 ### This server is a group server with many games to play!
 ### Premium server IP:play.nicehello.online:54631
 ### Cracked server IP:play.nicehello.online:12220
-### Official website:<a href="https://nicehello.github.io">nicehello.github.io</a>
+### Official website:<a href="https://nicehello.github.io">nicehello.github.io</a><span> or </span><a href="https://mc.nicehello.top"</a>
 #
 #
 #
