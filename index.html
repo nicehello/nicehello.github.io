@@ -98,49 +98,12 @@
         a {
             color: blue
         }
-        /* 弹窗样式 */
-        #welcomeMessage {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            right: 20px;
-            background-color: rgba(0, 0, 0, 0.7); /* 黑色半透明背景 */
-            color: white; /* 文字颜色 */
-            padding: 10px;
-            text-align: center;
-            display: none; /* 默认隐藏 */
-            animation: slideDown 0.5s ease forwards, fadeOut 1s 2s ease forwards; /* 动画效果 */
-            border-radius: 20px; /* 圆角 */
-            max-width: 300px; /* 最大宽度 */
-            margin: 0 auto; /* 居中 */
-	}
         @font-face {
          font-family: 'ChillRoundF';
-         src: url('https://145hub.pages.dev/ChillRoundFRegular.ttf') format('opentype');
+         src: url('/ChillRoundF.ttf') format('truetype');
         }
         body {
          font-family: 'ChillRoundF', sans-serif;
-        }
-        /* 弹出动画 */
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-            }
-            to {
-                transform: translateY(0);
-            }
-        }
-
-        /* 收回动画 */
-        @keyframes fadeOut {
-            from {
-                opacity: 1;
-                transform: translateY(0);
-            }
-            to {
-                opacity: 0;
-                transform: translateY(-100%);
-            }
         }
         /* 页脚样式 */
         footer {
