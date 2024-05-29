@@ -1,44 +1,21 @@
-
 <!doctype html>
-
 <html>
-
     <script>
-
         //屏蔽右键菜单 
-
         document.oncontextmenu = function(event) {
-
         if (window.event) {
-
         event = window.event;
-
         }
-
-        
-
         try {
-
         var the = event.srcElement;
-
         if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
-
         return false;
-
         }
-
         return true;
-
         } catch (e) {
-
         return false;
-
         }
-
         }
-
-        
-
         //屏蔽粘贴 
 
         document.onpaste = function(event) { 
@@ -112,6 +89,17 @@
     <title>NiceHello Network</title>
 
     <style>
+	.button {    
+		background-color: #2dabf9;
+		border: none;    
+                color: white;    
+		padding: 15px 32px;    
+		text-align: right;    
+                text-decoration: none;    
+		display: inline-block;    
+		font-size: 16px;
+		font-family:ChillRoundF;
+		}
 
         .myButton {
 
