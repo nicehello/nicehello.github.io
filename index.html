@@ -87,6 +87,12 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 
     <title>NiceHello Network</title>
+    <!--导入基本样式-->
+    <link style="text/css" rel="stylesheet" href="css/bootstrap.css">  
+    <!--导入基本样式的压缩-->
+    <link style="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <!--导入主题样式  注意：顺序 不可变-->
+    <link style="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
 
     <style>
 	.button {    
@@ -101,6 +107,7 @@
 		cursor:pointer;
 		border:1px solid #0b0e07;
 		border-radius:3px;
+		text-shadow:0px 1px 0px #263666;
 		}
                 .button:hover {
 	          background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%)
@@ -238,6 +245,11 @@
 </head>
 
 <body>
+	<ul class="nav nav-tabs">
+	 <li><a href="#tab2" data-toggle=tab">首页</a></li>
+	 <li><a href="#tab2" data-toggle=tab">关注</a></li>
+	 <li><a href="#tab2" data-toggle=tab">个人中心</a></li>
+	</ul>
         <p align="right"><a href="/login">
 
            <button class="button">登录/注册(体验版)</button>
